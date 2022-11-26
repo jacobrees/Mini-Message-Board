@@ -7,5 +7,11 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <% messages.forEach((message) =>{ %>
+      <p><%= message.user %></p>
+      <p><%= message.text %></p>
+      <p><%= message.added%></p>
+    <% }) %>
+    <a href="/new">Create Message</a>
   </body>
 </html>
